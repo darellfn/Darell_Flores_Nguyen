@@ -32,15 +32,19 @@
 }
 
 .picture-div {
-    margin-left: 45px;
-    margin-right: 45px;
-    margin-top: 20px;
+    height: 400px;
+    width: 400px;
+    margin-left: 0px;
+    margin-right: 90px;
+    margin-top: 0px;
     border: 1px black;
+    background-color: white;
 }
 
 .text-div {
     margin-top: 0px;
     margin-right: 15px;
+    background-color: white;
 }
 
 .hello {
