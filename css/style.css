@@ -8,7 +8,7 @@
 
 .web-canvas {
     background-color: rgb(238,217,196);
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -21,8 +21,8 @@
     max-width: 65vh;
     width: 100%;
     display: flex;
-    transform: translateY(-15vh);
     flex-direction: row;
+    margin-top: -10vh;
 }
 
 .picture-div {
@@ -40,6 +40,13 @@
     transform: translateX(34%) translateY(10%);
     min-height: 40%;
     min-width: 40%;
+    aspect-ratio: 1 / 1;
+}
+
+.picture-name {
+    transform: translateX(20%);
+    margin-top: 10%;
+    font-size: 2.5vh;
 }
 
 .text-div {
@@ -51,14 +58,14 @@
 }
 
 .hello {
-    font-size: 130px;
+    font-size: 8vh;
     margin-top: 5%;
     margin-bottom: 0%;
     transform: translateX(5%);
 }
 
 .p1 {
-    font-size: 220%;
+    font-size: 2.3vh;
     transform: translateX(5%);
     width: 97%;
     
@@ -74,25 +81,33 @@
 }
 
 .cv-button {
-    height:45px;
+    height: 4vh;
     width: 40%;
     border-radius: 50px;
     border: transparent;
     cursor: pointer;
     background-color: rgb(0,80,255);
     color: white;
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: bold;
 }
 
 .portfolio-button {
-    height:45px;
+    height: 4vh;
     width: 40%;   
     border-radius: 50px;
     border: 1px solid black;
     cursor: pointer;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 2vh;
     font-weight: bold;
 }
 
+.experience-card {
+    background-color: rgb(238,217,196);
+    width: 100%;
+    height: 1600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
