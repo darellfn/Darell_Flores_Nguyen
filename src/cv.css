@@ -1,0 +1,52 @@
+.CV-page {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.edu-titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.utdanning-section {
+  background-color: grey;
+  max-width: 400px;
+  margin: 40px auto;  
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.utdanning {
+  font-size: 4.5vh;
+}
+
+.divider {
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-color: black;
+  margin: 10px auto;
+}
+
+.alma-mater {
+  font-size: 2vh;
+}
+
+.education-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dates {
+  color: black;
+  font-size: 2vh;
+  margin-bottom: 5vh;
+}

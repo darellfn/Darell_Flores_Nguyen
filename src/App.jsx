@@ -1,6 +1,7 @@
-import Webpage from "./Components/Webpage.jsx"
-import WebHeader from "./Components/WebHeader.jsx"
-import Card from "./Components/Card.jsx"
+import Webpage from "./HomePage/Components/Webpage.jsx"
+import WebHeader from "./HomePage/Components/WebHeader.jsx"
+import Card from "./HomePage/Components/Card.jsx"
+import Cv from "./CVPage/Components/CV.jsx"
 
 function App() {
   return(
@@ -9,6 +10,7 @@ function App() {
     <Webpage>
       <Card />
     </Webpage>
+    <Cv />
     </>
 
   );
