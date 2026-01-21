@@ -7,7 +7,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-
 .webheader {
   color: white;
   margin-bottom: 10vh;
@@ -25,17 +24,15 @@ h1, h2, h3, h4, h5, h6 {
 .webpage .card {
   max-width: 80vh;
   width: 100%;
-  height: 100%;
-  background-color: rgb(252, 209, 42);
+  background-color: white;
   text-align: center;
   display: flex;
-  justify-content: center;
   flex-direction: row;
+  align-items: stretch;
 }
 
 .pic-div {
   width: 50%;
-  height: 100%;
   background-color: rgb(252, 209, 42);
   display: flex;
   flex-direction: column;
@@ -44,9 +41,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-div {
   width: 50%;
-  height: 100%;
   background-color: rgb(44, 45, 45);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .webpage .card .card-image {
@@ -57,6 +56,11 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
+.pic-bio {
+  text-align: start;
+  margin-left: 4.5vh;
+  margin-bottom: 2vh;
+}
 
 .hello {
   color: white;
@@ -69,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   text-align: start;
   margin-left: 8%;
   margin-right: 5%;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .button-div {
@@ -79,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-button {
-  margin-top: 30%;
+  margin-top: 15%;
   width: 40%;
   height: 4vh;
   cursor: pointer;
@@ -92,7 +96,6 @@ h1, h2, h3, h4, h5, h6 {
 .card-button:hover {
   background-color: darkgray;
 }
-
 
 .CV-page {
   color: white;
@@ -153,4 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .tasks {
   font-size: 1.8vh;
+}
+
+.project-card {
+  width: 80vh;
+  height: 60vh;
+  background-color: aqua;
 }

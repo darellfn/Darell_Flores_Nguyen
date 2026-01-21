@@ -1,24 +1,34 @@
+import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+
 function Card() {
+    const navigate = useNavigate()
+
     return (
         <div className = "card">
             <div className = "pic-div">
-                <img className = "card-image" alt = "dfn" src = "images/profilbilde.jpeg"></img>
+
+                <div className="profile-pic">
+                    <img className = "card-image" alt = "dfn" src = "images/profilbilde.jpeg"></img>
+                </div>
                 
                 <h2>
                     Darell Flores Nguyen
                 </h2>
                 
-                <p>
-                    Alder: 22
-                </p>
+                <div className="pic-bio">
+                    <p>
+                        <strong>Alder:</strong> 22
+                    </p>
 
-                <p>
-                    Stilling: B.sc. på Universitetet i Oslo
-                </p> 
+                    <p>
+                        <strong>Stilling:</strong> B.sc. på Universitetet i Oslo
+                    </p> 
                 
-                <p>
-                    Fun fact: I like collecting consoles
-                </p>
+                    <p>
+                        <strong>Rolle:</strong> Fullstack utvikler
+                    </p>
+                </div>
                                           
             </div>
             <div className = "text-div">
@@ -34,10 +44,11 @@ function Card() {
                 </p>
 
                 <div className = "button-div">
-                    <button className = "card-button">
+                    <button className = "card-button" onClick={() => navigate("/cv")}>
                         CV
                     </button>
-                    <button className = "card-button">
+                    
+                    <button className = "card-button" onClick={() => navigate("/project")}>
                         Prosjekter
                     </button>
                 </div>
