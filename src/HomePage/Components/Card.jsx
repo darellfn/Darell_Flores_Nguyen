@@ -9,11 +9,11 @@ function Card() {
                 </h2>
                 
                 <p>
-                    Age: 22
+                    Alder: 22
                 </p>
 
                 <p>
-                    Occupation: B.sc. at University in Oslo
+                    Stilling: B.sc. på Universitetet i Oslo
                 </p> 
                 
                 <p>
@@ -26,10 +26,11 @@ function Card() {
                     Hello
                 </p>
                 <p className = "bio-text">
-                    Welcome to my website. 
-                    This is my personal space where I showcase my work, skills, and projects as I grow as a developer. 
-                    I have worked as a full-stack developer (front-end & back-end) in projects.
-                    Please take a look around and feel free to reach out.
+                    Velkommen til nettsiden min. 
+                    Dette er mitt personlige rom hvor jeg viser frem arbeidet mitt, 
+                    ferdighetene mine og prosjektene mine mens jeg utvikler meg som utvikler. 
+                    Jeg har jobbet som fullstack-utvikler (front-end og back-end) i ulike prosjekter. 
+                    Ta gjerne en titt rundt og ikke nøl med å ta kontakt.
                 </p>
 
                 <div className = "button-div">
@@ -37,7 +38,7 @@ function Card() {
                         CV
                     </button>
                     <button className = "card-button">
-                        Projects
+                        Prosjekter
                     </button>
                 </div>
 
