@@ -36,7 +36,7 @@ function Education() {
       <section className="section">
         
         <div className="titles">
-            <h1 className="CV-titles">
+            <h1 className="titles">
                 Utdanning
             </h1>
         </div>

@@ -1,7 +1,7 @@
 function WebHeader() {
     return ( 
     <section >
-        <header>                
+        <header className="head">      
             <h2 className= "webheader">
                 Darell Flores Nguyen
             </h2>
