@@ -23,6 +23,10 @@ function Project() {
                         Wireframen ble laget ved hjelp av Miro, og gir en oversikt over både individuelt og felles strømforbruk i kollektiv. Den sporer ditt personlige 
                         strømforbruk, slik at du kun betaler for det du selv bruker, og ikke andres forbruk.
                     </p>
+
+                    <p className="tech-text">
+                        <strong>Teknologier:</strong> Miro
+                    </p>
                 </div>
 
             </div>
@@ -39,6 +43,17 @@ function Project() {
                         Ikonene på kartongen fungerer som indikatorer for både brukere og kunder, og viser når en bestemt type melk begynner å bli tom eller er helt tom. Teknologien som ble brukt i prosjektet var Arduino. 
                         For mer informasjon, besøk Innotink sin nettside via IN1060-emnesiden. 
                     </p>
+
+                    <p className="tech-text">
+                        <strong>Teknologier:</strong> Arduino (C++)
+                    </p>
+
+                    <p className="more-info">Mer info:  
+                        <a href="https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/innotink/" target="_blank" rel="noopener noreferrer">
+                            https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/innotink/
+                        </a>
+                    </p>
+                    
                 </div>
 
                 <div className="project-card">
@@ -66,6 +81,17 @@ function Project() {
                         Gjennom dette arbeidet har jeg utviklet en sterk forståelse for algoritmisk tenkning, 
                         datastrukturer og hvordan effektive løsninger bidrar til robuste og skalerbare systemer.
                     </p>
+
+                    <p className="tech-text">
+                        <strong>Teknologier:</strong> Visual Studio Code, Python, Java, JavaScript, Kotlin
+                    </p>
+
+                    <p className="more-info">GitHub:
+                        <a href="https://github.com/darellfn/Sorting_Algorithms.git" target="_blank" rel="noopener noreferrer">
+                            https://github.com/darellfn/Sorting_Algorithms.git
+                        </a>
+                    </p>
+                    
                 </div>
 
             </div>
@@ -82,6 +108,16 @@ function Project() {
                         Nettsiden er bygget med HTML, CSS og JavaScript med React rammeverk, og er utviklet med fokus på responsivt design, god struktur og en tydelig brukeropplevelse på tvers av ulike enheter.
                         Gjennom arbeidet med nettsiden har jeg fått praktisk erfaring med moderne front-end-utvikling, komponentbasert arkitektur i React og samspillet mellom design og funksjonalitet. 
                         Prosjektet gir også et godt bilde av min tekniske kompetanse, arbeidsmetodikk og interesse for kontinuerlig forbedring og effektiv utvikling.
+                    </p>
+
+                    <p className="tech-text">
+                        <strong>Teknologier:</strong> Visual Studio Code, HTML, CSS, JavaScript, React, Vite, Node
+                    </p>
+
+                    <p className="more-info">GitHub:
+                        <a href="https://github.com/darellfn/Darell_Flores_Nguyen.git" target="_blank" rel="noopener noreferrer">
+                            https://github.com/darellfn/Darell_Flores_Nguyen.git                        
+                        </a>
                     </p>
                 </div>
 
@@ -145,6 +181,21 @@ function Project() {
                    praksiser fra <strong>DevOps</strong>. Ved å kombinere teknisk utvikling med arkitektonisk design og håndtering av kodearkivet bidro jeg til smidig samarbeid, reduserte 
                    integrasjonsproblemer og sikret effektiv leveranse av kode av høy kvalitet gjennom hele prosjektet.
                 </p>
+
+                    <p className="tech-text">
+                    <strong>Teknologier:</strong> Android Studio, Kotlin, Figma, REST API, Jetpack Compose, Mermaid, Miro, Bruno, Google Cloud Platform, GitHub, Jira
+                </p>
+
+                    <p className="tech-text">
+                    <strong>Systemutviklingsprosess:</strong> Smidig metode - Scrum & Kanban (ScrumBan)
+                </p>
+
+                <p className="more-info">GitHub: 
+                    <a href="https://github.com/darellfn/Sunshine.git" target="_blank" rel="noopener noreferrer">
+                        https://github.com/darellfn/Sunshine.git                      
+                    </a>
+                </p>
+                
             </div>
         </div>
 
@@ -171,6 +222,21 @@ function Project() {
                        Prosjektet ga meg verdifull praktisk erfaring innen front-end-utvikling, styrket min forståelse av moderne webteknologier og forbedret min evne til å samarbeide effektivt i team, samtidig som vi leverte en 
                        funksjonell og brukervennlig webapplikasjon.
                     </p>
+
+                    <p className="tech-text">
+                        <strong>Teknologier:</strong> Visual Studio Code, Python, React, HTML, Tailwind CSS, JavaScript, Django, Node, Jira, GitHub
+                    </p>
+
+                    <p className="tech-text">
+                        <strong>Systemutviklingsprosess:</strong> Smidig metode - Scrum & Kanban (ScrumBan)
+                    </p>
+
+                    <p className="more-info">GitHub:
+                        <a href="https://github.uio.no/FUI/sommerprosjekt-bokskap.git" target="_blank" rel="noopener noreferrer">
+                            https://github.uio.no/FUI/sommerprosjekt-bokskap.git                    
+                        </a>
+                    </p>
+
                 </div>
 
                 <div className="project-card">
@@ -183,7 +249,6 @@ function Project() {
             
         </Technologies>
     </div>
-
     );
 }
 

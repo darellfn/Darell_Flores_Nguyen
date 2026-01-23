@@ -10,7 +10,8 @@ function Technologies() {
         "React",
         "Android Mobile Development (Jetpack Compose)",
         "Android Studios",
-        "Arduino (C++)"
+        "Arduino (C++)",
+        "Mermaid"
     ]
 
     const technologies2 = [
@@ -36,17 +37,17 @@ function Technologies() {
         </h1>
 
         <div className="technology-section">
-            <ul>
+            <ul className="technology-list">
                 {technologies1.map((technology, index) => (
-                    <li key={index} className="technology">
+                    <li key={index} className="technology1">
                         {technology}
                     </li>
                 ))}
             </ul>
 
-            <ul>
+            <ul className="technology-list">
                 {technologies2.map((technology, index) => (
-                    <li key={index} className="technology">
+                    <li key={index} className="technology2">
                         {technology}
                     </li>
                 ))}
