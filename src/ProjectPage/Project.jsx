@@ -11,7 +11,7 @@ function Project() {
             <div className="project-section">
 
                 <div className="project-card">
-                    <img src="/images/ell.png" alt="ell" className="imga"></img>
+                    <img src="images/ell.png" alt="ell" className="imga"></img>
                 </div>
 
                 <div className="project-card">
@@ -57,7 +57,7 @@ function Project() {
                 </div>
 
                 <div className="project-card">
-                    <img src="/images/milk.png" alt="The Milk Carton" className="imga"></img>
+                    <img src="images/milk.png" alt="The Milk Carton" className="imga"></img>
                 </div>
 
             </div>
@@ -65,7 +65,7 @@ function Project() {
             <div className="project-section">
 
                 <div className="project-card">
-                    <img src="/images/algorithm.png" alt="algorithm" className="imga"></img>
+                    <img src="images/algorithm.png" alt="algorithm" className="imga"></img>
                 </div>
 
                 <div className="project-card">
@@ -122,7 +122,7 @@ function Project() {
                 </div>
 
                 <div className="project-card">
-                    <img src="/images/dfn.png" alt="dfn" className="imga"></img>
+                    <img src="images/dfn.png" alt="dfn" className="imga"></img>
                 </div>
 
             </div>
@@ -136,7 +136,7 @@ function Project() {
                 
                 <div className="project-card">
 
-                    <img src="/images/sunshine1.png" alt="Sunshine" className="imga"></img>
+                    <img src="images/sunshine1.png" alt="Sunshine" className="imga"></img>
                    
                 </div>
                 
@@ -165,7 +165,7 @@ function Project() {
 
             <div className="project-card">
 
-                <img src="/images/sunshine2.png" alt="Sunshine" className="imga"></img>
+                <img src="images/sunshine2.png" alt="Sunshine" className="imga"></img>
                     
             </div>
 
@@ -240,7 +240,7 @@ function Project() {
                 </div>
 
                 <div className="project-card">
-                    <img src="/images/lockr.png" alt="Lockr" className="imga"></img>
+                    <img src="images/lockr.png" alt="Lockr" className="imga"></img>
                 </div>
 
         </div>
