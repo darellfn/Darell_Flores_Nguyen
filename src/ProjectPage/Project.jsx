@@ -169,7 +169,7 @@ function Project() {
                     
             </div>
 
-            <div className="sunshine-card">
+            <div className="project-card">
                 <h1>
                     Min rolle i Sunshine-prosjektet
                 </h1>

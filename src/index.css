@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-ul {
   display: flex;
-  gap: 4rem;
+  gap: 19%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 120%;
 }
 
-.nav-button:hover {
+.nav-button a:hover {
   text-decoration: underline rgb(238 195 22) 2px;
 }
 
@@ -100,6 +100,18 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 2%;
 }
 
+@media (max-width: 600px) {
+  .webpage .card {
+    width: 100%;
+    background-color: rgb(37 38 41);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 2%;
+  }
+}
+
 .pic-div {
   width: 65%;
   background-color: rgb(238 195 22);
@@ -110,15 +122,6 @@ h1, h2, h3, h4, h5, h6 {
 /*
 rgb(252, 209, 42)
 rgb(44, 45, 45)*/
-.text-div {
-  width: 100%;
-  background-color: rgb(37 38 41);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 2px solid rgb(238 195 22);
-}
 
 .webpage .card .card-image {
   width: 25vh;
@@ -134,11 +137,22 @@ rgb(44, 45, 45)*/
   margin-bottom: 2vh;
 }
 
+.text-div {
+  width: 100%;
+  background-color: rgb(37 38 41);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border: 2px solid rgb(238 195 22);
+}
+
 .hello {
   color: white;
   font-size: 10vh;
-  margin-top: 3%;
-  margin-bottom: 0%;
+  margin-top: 0%;
+  margin-bottom: 4%;
 }
 
 .bio-text {
@@ -146,6 +160,7 @@ rgb(44, 45, 45)*/
   margin-left: 8%;
   margin-right: 5%;
   margin-top: 5%;
+  margin-bottom: 6%;
   word-spacing: 0.2em;
   line-height: 1.7;
 }
@@ -153,15 +168,28 @@ rgb(44, 45, 45)*/
 .button-div {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 5%;
+  flex-direction: row;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-bottom: 10%;
+}
+
+@media (max-width: 600px) {
+  .button-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .card-button {
   margin-top: 8%;
-  width: 40%;
-  height: 4vh;
+  width: 100%;
+  height: 65%;
   cursor: pointer;
-  font-size: 2vh;
+  font-size: 110%;
   color: white;
   background-color: rgb(68 69 75);
   border: transparent;
@@ -171,12 +199,29 @@ rgb(44, 45, 45)*/
   background-color: darkgray;
 }
 
+
+
+/*---------- CV PAGE ----------*/
+
+
+
+
 .CV-page {
   color: white;
   background-color: rgb(37 38 41);
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+  .CV-page {
+    color: white;
+    background-color: rgb(37 38 41);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .titles {
@@ -190,11 +235,22 @@ rgb(44, 45, 45)*/
 
 .section {
   background-color: rgb(37 38 41);
-  max-width: 55vh;
+  max-width: 40%;
   margin: 40px auto; 
   padding: 40px;
   border-radius: 12px;
   border:2px solid rgb(238 195 22);
+}
+
+@media (max-height: 1000px) {
+  .section {
+    background-color: rgb(37 38 41);
+    width: 100%;
+    margin: 40px auto; 
+    padding: 40px;
+    border-radius: 12px;
+    border:2px solid rgb(238 195 22);
+  }
 }
 
 .utdanning {
@@ -255,11 +311,26 @@ rgb(44, 45, 45)*/
   color: darkgray;
 }
 
+
+
+
+/*---------- PROJECT PAGE ----------*/
+
+
+
+
+
+.project-title {
+  color: white;
+  margin-bottom: 8%;
+  font-size: 278%;
+}
+
 .software-engineering {
   color: white;
   margin-bottom: 10%;
   margin-top: 10%;
-  font-size: 5vh;
+  font-size: 278%;
 }
 
 .project-page {
@@ -276,15 +347,44 @@ rgb(44, 45, 45)*/
   display: flex;
   flex-direction: row;
   height: auto;
-  gap: 8%;
   align-items: stretch;
   margin-bottom: 5%;
+  gap: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
+
+@media (max-width: 1000px) {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: stretch;
+    margin-bottom: 5%;
+    gap: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+/* @media (max-height: 800px) {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 8%;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+} */
 
 .project-card {
   background-color: rgb(37 38 41);
   color: white;
-  width: 80vh;
+  width: 100%;
   height: auto;
   display: flex;
   align-items: stretch;
@@ -339,7 +439,7 @@ rgb(44, 45, 45)*/
 }
 
 .imga {
-  width: 90%;
+  width: 100%;
   height: 90%;
   object-fit:scale-down;
 }
@@ -375,12 +475,6 @@ iframe {
   height: 100%;
 }
 
-.project-title {
-  color: white;
-  margin-bottom: 8%;
-  font-size: 5vh;
-}
-
 .technology1 {
   color: white;
   margin-bottom: 10%;
@@ -394,7 +488,7 @@ iframe {
 .technology-title {
   color: white;
   margin-bottom: 5%;
-  font-size: 5vh;
+  font-size: 278%;
 }
 
 .technology-section {
