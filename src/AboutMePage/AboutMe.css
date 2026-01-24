@@ -1,0 +1,124 @@
+/* rgb(68 69 75) hover
+rgb(26 26 26) background
+rgb(148 243 228) letter
+rgb(55 170 156) button */
+
+.about-me-page {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.pic-and-text {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+}
+
+@media (max-width: 700px) {
+.pic-and-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+}
+
+.me-and-rio {
+    margin-top: 3%;
+    width: 23%;
+    border: 2px solid rgb(55 170 156);
+}
+
+@media (max-width: 700px) {
+.me-and-rio {
+    width: 50%;
+    height: 20%;
+    border: 2px solid rgb(55 170 156);
+} 
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 45%;
+    background-color: rgb(26 26 26);
+}
+
+@media (max-width: 700px) {
+.text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: rgb(26 26 26);
+}
+}
+
+.text-section h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.highlight {
+    color: rgb(148 243 228);
+}
+
+.text {
+    color: white;
+    line-height: 1.5;
+    word-spacing: 0.2em;
+}
+
+.CV-button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 110%;
+  color: white;
+  background-color: rgb(55 170 156);
+  border: transparent;
+  text-decoration: none;
+  margin-top: 3%;
+}
+
+.CV-button:hover {
+    background-color: rgb(51 63 68);
+}
+
+.info-card {
+    width: 100%;
+    background-color: rgb(68 69 75);
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 25%;
+    bottom: 0;
+    margin-top: 10%;
+    line-height: 1.5;
+}
+
+.points {
+    list-style-type: none;
+    color: white;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}

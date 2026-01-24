@@ -6,19 +6,25 @@ function Navbar() {
             <ul className='navbar-ul'>
                 <li className='nav-button'>
                     <NavLink to="/" className="nav">
-                        Hjem
-                    </NavLink>
-                </li>
-
-                <li className='nav-button'>
-                    <NavLink to="/cv" className="nav">
-                        CV
+                        HJEM
                     </NavLink>
                 </li>
 
                 <li className='nav-button'>
                     <NavLink to="/project" className="nav">
-                        Prosjekter
+                        PROSJEKTER
+                    </NavLink>
+                </li>
+
+                <li className='nav-button'>
+                    <NavLink to="/aboutme" className="nav">
+                        OM MEG
+                    </NavLink>
+                </li>
+
+                <li className='nav-button'>
+                    <NavLink to="/cv" className="nav">
+                        KONTAKT
                     </NavLink>
                 </li>
             </ul>

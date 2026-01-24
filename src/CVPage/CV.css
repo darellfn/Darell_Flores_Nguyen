@@ -1,0 +1,109 @@
+/* rgb(68 69 75) hover
+rgb(26 26 26) background
+rgb(148 243 228) letter
+rgb(55 170 156) button */
+
+.CV-page {
+  color: white;
+  background-color: rgb(26 26 26);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+  .CV-page {
+    color: white;
+    background-color: rgb(26 26 26);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+.section {
+  background-color: rgb(26 26 26);
+  max-width: 40%;
+  margin: 40px auto; 
+  padding: 40px;
+  border-radius: 12px;
+  border:2px solid rgb(148 243 228);
+}
+
+@media (max-height: 1000px) {
+  .section {
+    background-color: rgb(26 26 26);
+    width: 100%;
+    margin: 40px auto; 
+    padding: 40px;
+    border-radius: 12px;
+    border:2px solid rgb(148 243 228);
+  }
+}
+
+.utdanning {
+  font-size: 4.5vh;
+}
+
+.divider {
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-color: rgb(148 243 228);
+  margin: 10px auto;
+}
+
+.divider2 {
+  margin-bottom: 0vh;
+  width: 100%;
+  border: 0;
+  height: 2px;
+  background-color: rgb(148 243 228);
+  margin: 10px auto;
+}
+
+.alma-mater {
+  font-size: 2vh;
+}
+
+.education-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dates {
+  color: rgb(148 243 228);
+}
+
+.experience-div {
+  background-color: gray;
+  width: 10vh;
+  height: 10vh;
+}
+
+.tasks {
+  font-size: 1.8vh;
+}
+
+.contacts {
+  color: white;
+}
+
+.contacts a {
+  color: white;
+  margin-left: 1%;
+}
+
+.contacts a:hover {
+  color: darkgray;
+}

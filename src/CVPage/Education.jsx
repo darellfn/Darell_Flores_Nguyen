@@ -1,33 +1,33 @@
 function Education() {
   const semester = {
-    "1. Semester": [
-      "IN1000 - Introduksjon til objektorientert programmering",
-      "IN1020 - Introduksjon til datateknologi",
-      "IN1050 - Introduksjon til design, bruk, interaksjon"
-    ],
-    "2. Semester": [
-      "IN1010 - Objektorientert programmering",
-      "IN1030 - Systemer, krav og konsekvenser",
-      "IN1060 - Bruksorientert design"
-    ],
-    "3. Semester": [
-      "EXPHIL03 - Examen philosophicum",
-      "IN2020 - Metoder i interaksjonsdesign"
-    ],
-    "4. Semester": [
-      "IN2000 - Software Engineering med prosjektarbeid",
-      "IN2150 - IT i organisasjoner"
+    "6. Semester": [
+      "MEVIT2110 – Medie- og kulturteori",
+      "MEVIT2600 – Mediepåvirkning",
+      "MEVIT2532 – Filmhistorie"
     ],
     "5. Semester": [
       "IN2010 - Algoritmer og datastrukturer",
       "IN2120 - Informasjonssikkerhet",
       "IN2090 - Databaser og datamodellering",
       "MEVIT2725 - Video Games: Aesthetics, Industry and Culture"
+    ], 
+    "4. Semester": [
+      "IN2000 - Software Engineering med prosjektarbeid",
+      "IN2150 - IT i organisasjoner"
     ],
-    "6. Semester": [
-      "MEVIT2110 – Medie- og kulturteori",
-      "MEVIT2600 – Mediepåvirkning",
-      "MEVIT2532 – Filmhistorie"
+    "3. Semester": [
+      "EXPHIL03 - Examen philosophicum",
+      "IN2020 - Metoder i interaksjonsdesign"
+    ],
+    "2. Semester": [
+      "IN1010 - Objektorientert programmering",
+      "IN1030 - Systemer, krav og konsekvenser",
+      "IN1060 - Bruksorientert design"
+    ],
+    "1. Semester": [
+      "IN1000 - Introduksjon til objektorientert programmering",
+      "IN1020 - Introduksjon til datateknologi",
+      "IN1050 - Introduksjon til design, bruk, interaksjon"
     ]
   };
 
