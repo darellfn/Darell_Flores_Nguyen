@@ -1,0 +1,114 @@
+.head {
+  background-color: rgb(26 26 26);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+  .head {
+    background-color: rgb(26 26 26);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media (max-width: 700px) {
+  .navbar-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+}
+
+.foot {
+  width: 100%;
+  background-color: rgb(68 69 75);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.web-header-left,
+.web-header-center,
+.web-header-right {
+  flex: 1;
+}
+
+.web-header-left {
+  color: white;
+  margin-left: 3.5%;
+  font-size: 165%;
+}
+
+.web-header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight {
+  color: rgb(148 243 228);
+}
+
+.nav {
+  white-space: nowrap;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  padding-right: 25%;
+  margin-right: 10%;
+}
+
+.navbar-ul {
+  display: flex;
+  gap: 25%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.navbar li {
+  color: white;
+  cursor: pointer;
+}
+
+.nav-button a {
+  color: white;
+  font-size: 120%;
+}
+
+.nav-button a:hover {
+  color: rgb(148 243 228);
+}
+
+.nav-button a.active {
+  color: rgb(148 243 228);
+}

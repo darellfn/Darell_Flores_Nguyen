@@ -1,7 +1,7 @@
-import Webpage from "./HomePage/Webpage.jsx"
-import WebHeader from "./Components/WebHeader.jsx"
-import Card from "./HomePage/Card.jsx"
-import Cv from "./CVPage/Components/CV.jsx"
+import Layout from "./Layout.jsx"
+import Home from "./HomePage/Home.jsx"
+import AboutMe from "./AboutMePage/AboutMe.jsx"
+import Cv from "./CVPage/CV.jsx"
 import Project from "./ProjectPage/Project.jsx"
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
@@ -9,29 +9,12 @@ function App() {
   return(
     <Router>
       <Routes>
-        <Route exact path="/" element={
-          <>
-            <WebHeader/>
-            <Webpage>
-              <Card/>
-            </Webpage>
-          </>
-        }/>
-
-        <Route path="/cv" element={
-          <>
-            <WebHeader/>
-            <Cv/>
-          </>
-        }/>
-
-        <Route path="/project" element={
-          <>
-            <WebHeader/>
-            <Project className="project-card"/>
-          </>
-        }/>
-
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />}/>
+          <Route path="project" element={<Project />}/>
+          <Route path="aboutme" element={<AboutMe />}/>          
+          <Route path="cv" element={<Cv />}/>
+        </Route>
       </Routes>
     </Router>
   );

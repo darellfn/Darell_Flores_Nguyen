@@ -1,6 +1,26 @@
 import Technologies from "./Technologies";
+import './Project.css'
+
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 function Project() {
+
+      const location = useLocation();
+
+  useEffect(() => {
+    const scrollId = location.state?.scrollTo;
+    if (scrollId) {
+      setTimeout(() => {
+        const section = document.getElementById(scrollId);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 50);
+    } else {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.state]);
 
     return (
         <div className="project-page">
@@ -25,7 +45,7 @@ function Project() {
                     </p>
 
                     <p className="tech-text">
-                        <strong>Teknologier:</strong> Miro
+                        <strong className="tech">Teknologier:</strong> Miro
                     </p>
                 </div>
 
@@ -45,7 +65,7 @@ function Project() {
                     </p>
 
                     <p className="tech-text">
-                        <strong>Teknologier:</strong> Arduino (C++)
+                        <strong className="tech">Teknologier:</strong> Arduino (C++)
                     </p>
 
                     <p className="more-info">Mer info:  
@@ -68,7 +88,7 @@ function Project() {
                     <img src="images/algorithm.png" alt="algorithm" className="imga"></img>
                 </div>
 
-                <div className="project-card">
+                <div className="project-card" id="algorithm">
                     <h1>
                         Algoritmer
                     </h1>
@@ -83,7 +103,7 @@ function Project() {
                     </p>
 
                     <p className="tech-text">
-                        <strong>Teknologier:</strong> Visual Studio Code, Python, Java, JavaScript, Kotlin
+                        <strong className="tech">Teknologier:</strong> Visual Studio Code, Python, Java, JavaScript, Kotlin
                     </p>
 
                     <p className="more-info">GitHub:
@@ -98,7 +118,7 @@ function Project() {
 
             <div className="project-section">
 
-                <div className="project-card">
+                <div className="project-card" id="dfn-bro">
                     <h1>
                         Denne nettsiden
                     </h1>
@@ -111,7 +131,7 @@ function Project() {
                     </p>
 
                     <p className="tech-text">
-                        <strong>Teknologier:</strong> Visual Studio Code, HTML, CSS, JavaScript, React, Vite, Node
+                        <strong className="tech">Teknologier:</strong> Visual Studio Code, HTML, CSS, JavaScript, React, Vite, Node
                     </p>
 
                     <p className="more-info">GitHub:
@@ -183,11 +203,11 @@ function Project() {
                 </p>
 
                     <p className="tech-text">
-                    <strong>Teknologier:</strong> Android Studio, Kotlin, Figma, REST API, Jetpack Compose, Mermaid, Miro, Bruno, Google Cloud Platform, GitHub, Jira
+                    <strong className="tech">Teknologier:</strong> Android Studio, Kotlin, Figma, REST API, Jetpack Compose, Mermaid, Miro, Bruno, Google Cloud Platform, GitHub, Jira
                 </p>
 
                     <p className="tech-text">
-                    <strong>Systemutviklingsprosess:</strong> Smidig metode - Scrum & Kanban (ScrumBan)
+                    <strong className="tech">Systemutviklingsprosess:</strong> Smidig metode - Scrum & Kanban (ScrumBan)
                 </p>
 
                 <p className="more-info">GitHub: 
@@ -224,11 +244,11 @@ function Project() {
                     </p>
 
                     <p className="tech-text">
-                        <strong>Teknologier:</strong> Visual Studio Code, Python, React, HTML, Tailwind CSS, JavaScript, Django, Node, Jira, GitHub
+                        <strong className="tech">Teknologier:</strong> Visual Studio Code, Python, React, HTML, Tailwind CSS, JavaScript, Django, Node, Jira, GitHub
                     </p>
 
                     <p className="tech-text">
-                        <strong>Systemutviklingsprosess:</strong> Smidig metode - Scrum & Kanban (ScrumBan)
+                        <strong className="tech">Systemutviklingsprosess:</strong> Smidig metode - Scrum & Kanban (ScrumBan)
                     </p>
 
                     <p className="more-info">GitHub:
