@@ -33,7 +33,7 @@ function Technologies() {
     return (
         <>
         <h1 className="technology-title">
-            Teknologier
+            Teknologier jeg har erfaring med
         </h1>
 
         <div className="technology-section">

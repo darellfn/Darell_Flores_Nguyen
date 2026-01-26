@@ -23,7 +23,7 @@ function LastestProjects() {
             <div className="latest-projects-card-section">
                 <div className="card-and-text">
                     <div className="latest-projects-card">
-                        <img src="/public/images/dfn.png" alt="dfn"/>
+                        <img src="/images/dfn.png" alt="dfn"/>
                     </div>
 
                     <div className="card-text">

@@ -1,0 +1,44 @@
+.contact-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-page h1 {
+    color: white;
+    margin-top: 3%;
+}
+
+.contact-card {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(26 26 26);
+    border: 2px solid rgb(148 243 228);
+    font-size: 20px;
+}
+
+.contact-card p {
+    color: white;
+}
+
+.contact-card p strong {
+    color: rgb(148 243 228);
+}
+
+.contact-card p a {
+    color: white;
+    margin-left: 2%;
+    white-space: nowrap;
+}
+
+.contact-card p a:hover {
+    color: rgb(68 69 75);
+}
