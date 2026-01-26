@@ -38,7 +38,7 @@ function LastestProjects() {
 
                 <div className="card-and-text">
                     <div className="latest-projects-card">
-                        <img src="/public/images/algorithm.png" alt=""/>
+                        <img src="/images/algorithm.png" alt=""/>
                     </div>
 
                     <div className="card-text">
