@@ -21,4 +21,6 @@ I have developed a personal website that serves as an online portfolio, where I 
 
 Through this project, I have gained hands-on experience with modern front-end development, component-based architecture in React, and the interaction between design and functionality. The website also reflects my technical skills, work methodology, and strong interest in continuous improvement and efficient development.
 
+Newest version is 1.0.1
+
 Technologies: Visual Studio Code, HTML, CSS, JavaScript, React, Vite, Node.js
