@@ -1,3 +1,8 @@
+/* rgb(68 69 75) hover
+rgb(26 26 26) background
+rgb(148 243 228) letter
+rgb(55 170 156) button */
+
 .webpage {
   background-color: rgb(26 26 26);
   display: flex;
@@ -63,9 +68,46 @@
   justify-content: start;
 }
 
+.link-div {
+  margin-top: 2.7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 135px;
+}
+
+.link {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: rgb(55 170 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link:hover {
+  background-color: rgb(68 69 75);
+  cursor: pointer
+}
+
+.link img {
+  object-fit: contain;
+  height: 60%;
+  width: 60%;
+}
+
+.mail {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
 .hello {
   color: rgb(148 243 228);
-  font-size: 100%;
+  font-size: 20px;
+  font-weight: bold;
+
 }
 
 .role {
@@ -144,7 +186,7 @@
 
 .latest-projects-text-and-button {
   width: 100%;
-  gap: 62.5%;
+  gap:42%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -200,6 +242,40 @@
   align-items: center;
   text-align: center;
   gap: 5%;
+}
+
+@media (max-width: 1100px) {
+.latest-projects-text-and-button {
+  width: 100%;
+  gap: 62.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media (max-width: 1000px) {
+.latest-projects-card-section {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5%;
+}
+}
+
+@media (max-width: 1000px) {
+.card-and-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
 }
 
 .card-and-text {

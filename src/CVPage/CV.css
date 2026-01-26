@@ -50,6 +50,26 @@ rgb(55 170 156) button */
   }
 }
 
+.section-contact {
+  background-color: rgb(26 26 26);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+.section-contact {
+  background-color: rgb(26 26 26);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+}
+
 .utdanning {
   font-size: 4.5vh;
 }
@@ -99,11 +119,15 @@ rgb(55 170 156) button */
   color: white;
 }
 
+.contacts strong {
+  color: rgb(148 243 228);
+}
+
 .contacts a {
   color: white;
   margin-left: 1%;
 }
 
 .contacts a:hover {
-  color: darkgray;
+  color: rgb(68 69 75);
 }

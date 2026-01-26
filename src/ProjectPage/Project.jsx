@@ -149,7 +149,7 @@ function Project() {
             
 
             <h1 className="software-engineering">
-                Software Engineering - Et samarbeid med andre
+                Software Engineering - <span className="highlight">Et samarbeid med andre</span>
             </h1>
 
             <div className="project-section">

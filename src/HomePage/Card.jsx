@@ -30,9 +30,30 @@ function Card() {
                 </p>
 
                 <div className = "button-div">
-                    <button className = "card-button" onClick={() => navigate("/cv")}>
+                    <button className = "card-button" onClick={() => {
+                        navigate("/aboutme");
+                        window.scrollTo(0, 0);
+                    }
+                    }>
                         OM MEG
                     </button>
+                </div>
+
+                <div className='link-div'>
+                    <a className='link' href="https://github.com/darellfn" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/github.png"></img>
+                    </a>
+
+                    <a className='link' href="https://www.linkedin.com/in/darell-flores-nguyen-a02225289" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/linkedin.png"/>
+                    </a>
+
+                    <div className='link' onClick={ () => {
+                        navigate("/contact");
+                        window.scrollTo(0, 0);
+                    }}>
+                        <img src="/images/mail.png" className='mail'/>
+                    </div>
                 </div>
 
             </div>

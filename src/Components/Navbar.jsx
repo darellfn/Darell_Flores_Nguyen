@@ -23,7 +23,7 @@ function Navbar() {
                 </li>
 
                 <li className='nav-button'>
-                    <NavLink to="/cv" className="nav">
+                    <NavLink to="/contact" className="nav">
                         KONTAKT
                     </NavLink>
                 </li>

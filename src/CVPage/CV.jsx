@@ -6,11 +6,11 @@ import './CV.css'
 function Cv() {
     return (
     <>
+        <Contact/>
         <div className="CV-page">
             {Education()}
             {Experience()}
         </div>
-        <Contact/>
     </>
 
     );
