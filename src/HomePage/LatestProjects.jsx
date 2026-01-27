@@ -31,7 +31,7 @@ function LastestProjects() {
                             Denne nettsiden
                         </h2>
                         <NavLink to="/project" className="more" state={{scrollTo: "dfn-bro"}}>
-                            Vite mer →
+                            Mer info →
                         </NavLink>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ function LastestProjects() {
                             Algoritmer
                         </h2>
                         <NavLink to="/project" className="more" state={{scrollTo: "algorithm"}}>
-                            Vite mer →
+                            Mer info →
                         </NavLink>
                     </div>
 
