@@ -1,37 +1,32 @@
 import { NavLink } from 'react-router-dom'
 import './ContactPage.css'
+import { contact } from './contactPageContent.js'
 
 function ContactPage() {
-    const contacts = "Bruh"
-
     return (
         <div className='contact-page'>
             <h1>
-                Ta kontakt
+                {contact.title}
             </h1>
             <div className='contact-card'>
-                <p>
-                    <strong>Telefon:</strong> +47 941 91 948
-                </p>
-
-                <p >
-                    <strong>Email:</strong> darellfn03@gmail.com  
-                </p>
-
-                <p>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/darellfn" target="_blank" rel="noopener noreferrer">
-                        darellfn
-                    </a>
-                </p>
-
-                <p>
-                    <strong>LinkedIn:</strong> 
-                    <a href="https://www.linkedin.com/in/darell-flores-nguyen-a02225289" target="_blank" rel="noopener noreferrer">
-                    Darell Flores Nguyen
-                    </a>
-                </p>
-
+                {contact.socials.map((cont, index) => {
+                    if (!cont.hasLink) {
+                        return (
+                            <p key={index}>
+                                <strong>{cont.social}</strong>{cont.value}
+                            </p>
+                        )
+                    } else {
+                        return (
+                            <p>
+                                <strong>{cont.social}</strong>
+                                <a href={cont.link} target="_blank" rel="noopener noreferrer">
+                                    {cont.value}
+                                </a>
+                            </p>
+                        )
+                    }
+                })}
             </div>
         </div>
     )
