@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom'
+import { latest } from './homePageContent'
+import { latestProjects } from './homePageContent'
 
 function LastestProjects() {
     return (
@@ -6,51 +8,37 @@ function LastestProjects() {
             <div className="latest-projects-text-and-button">
                 <div className="latest-text">
                     <h1>
-                        Profilprosjekter
+                        {latest.title}
                     </h1>
 
                     <h3>
-                        Nyeste prosjekter fullført
+                        {latest.latest}
                     </h3>
                 </div>
 
-                <NavLink to="/project" className="see-all-button">
-                    SE ALLE
+                <NavLink to={latest.buttonPath} className="see-all-button">
+                    {latest.buttonContent}
                 </NavLink>
 
             </div>
 
             <div className="latest-projects-card-section">
-                <div className="card-and-text">
-                    <div className="latest-projects-card">
-                        <img src="/images/dfn.png" alt="dfn"/>
-                    </div>
+                {latestProjects.map((project, index) => (
+                    <div className="card-and-text" key={index}>
+                        <div className="latest-projects-card">
+                            <img src={project.img} alt={project.alt}/>
+                        </div>
 
-                    <div className="card-text">
-                        <h2>
-                            Denne nettsiden
-                        </h2>
-                        <NavLink to="/project" className="more" state={{scrollTo: "dfn-bro"}}>
-                            Mer info →
-                        </NavLink>
+                        <div className="card-text">
+                            <h2>
+                                {project.name}
+                            </h2>
+                            <NavLink to={project.buttonPath} className="more" state={{scrollTo: project.scrollPath}}>
+                                {project.buttonContent}
+                            </NavLink>
+                        </div>
                     </div>
-                </div>
-
-                <div className="card-and-text">
-                    <div className="latest-projects-card">
-                        <img src="/images/algorithm.png" alt=""/>
-                    </div>
-
-                    <div className="card-text">
-                        <h2>
-                            Algoritmer
-                        </h2>
-                        <NavLink to="/project" className="more" state={{scrollTo: "algorithm"}}>
-                            Mer info →
-                        </NavLink>
-                    </div>
-
-                </div>
+                ))}
             </div>
         </div>
     )

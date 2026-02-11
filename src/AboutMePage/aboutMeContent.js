@@ -1,3 +1,12 @@
+export const title = {
+    word1: "Om ",
+    word2: "meg"
+}
+
+export const cvTitle = {
+    minCV: "MIN CV"
+}
+
 export const aboutMeContents = {
     paragraphs: [
         `Mitt navn er Darell Flores Nguyen, 22 år og er på tredjeåret mitt i 
