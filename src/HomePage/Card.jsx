@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
+import { cardContent } from './homePageContent.js'
+import { aboutMeButton } from './homePageContent.js'
+import { socials } from './homePageContent.js'
 
 function Card() {
     const navigate = useNavigate()
@@ -9,50 +11,45 @@ function Card() {
             <div className = "pic-div">
 
                 <div className="profile-pic">
-                    <img className = "card-image" alt = "dfn" src = "images/profilbilde.jpeg"></img>
+                    <img className = "card-image" alt = {cardContent.alt} src = {cardContent.img}></img>
                 </div>
-                
-                                          
+                             
             </div>
             <div className = "text-div">
                 <p className='hello'>
-                    Hei, jeg er Darell
+                    {cardContent.intro}
                 </p>
                 <p className = "role">
-                    Full-stack Developer
+                    {cardContent.role}
                 </p>
                 <p className = "bio-text">
-                    Velkommen til nettsiden min. 
-                    Dette er mitt personlige sted hvor jeg viser frem arbeidet mitt, 
-                    ferdighetene mine og prosjektene mine mens jeg utvikler meg som utvikler. 
-                    Jeg har jobbet som fullstack-utvikler (front-end og back-end) i ulike prosjekter. 
-                    Ta gjerne en titt rundt og ikke nøl med å ta kontakt.
+                    {cardContent.bio}
                 </p>
 
                 <div className = "button-div">
                     <button className = "card-button" onClick={() => {
-                        navigate("/aboutme");
+                        navigate(aboutMeButton.path);
                         window.scrollTo(0, 0);
                     }
                     }>
-                        OM MEG
+                        {aboutMeButton.content}
                     </button>
                 </div>
 
                 <div className='link-div'>
-                    <a className='link' href="https://github.com/darellfn" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/github.png"></img>
+                    <a className='link' href={socials.githubLink} target="_blank" rel="noopener noreferrer">
+                        <img src={socials.githubImg}></img>
                     </a>
 
-                    <a className='link' href="https://www.linkedin.com/in/darell-flores-nguyen-a02225289" target="_blank" rel="noopener noreferrer">
-                        <img src="/images/linkedin.png"/>
+                    <a className='link' href={socials.linkedInLink}target="_blank" rel="noopener noreferrer">
+                        <img src={socials.linkedInImg}/>
                     </a>
 
                     <div className='link' onClick={ () => {
-                        navigate("/contact");
+                        navigate(socials.emailPath);
                         window.scrollTo(0, 0);
                     }}>
-                        <img src="/images/mail.png" className='mail'/>
+                        <img src={socials.emailImg} className='mail'/>
                     </div>
                 </div>
 

@@ -1,5 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import './AboutMe.css'
+import { title } from './aboutMeContent.js'
+import { cvTitle } from './aboutMeContent.js'
 import { aboutMeContents } from './aboutMeContent.js'
 import { contactInfo1 } from './aboutMeContent.js'
 import { contactInfo2 } from './aboutMeContent.js'
@@ -13,7 +15,7 @@ function AboutMe() {
 
                 <div className='text-section'>
                     <h1>
-                        Om <span className='highlight'>meg</span>
+                        {title.word1}<span className='highlight'>{title.word2}</span>
                     </h1>
 
                     {aboutMeContents.paragraphs.map((text, index) => (
@@ -25,7 +27,7 @@ function AboutMe() {
                     <NavLink to="/cv" className="CV-button" onClick={ ()=> {
                         window.scrollTo(0, 0);
                     }}>
-                        MIN CV
+                        {cvTitle.minCV}
                     </NavLink>
                 </div>
 

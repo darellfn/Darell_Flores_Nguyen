@@ -1,39 +1,13 @@
-function Technologies() {
-    const technologies1 = [
-        "Python",
-        "Java",
-        "Kotlin",
-        "JavaScript",
-        "TypeScript",
-        "HTML",
-        "CSS",
-        "React",
-        "Android Mobile Development (Jetpack Compose)",
-        "Android Studios",
-        "Arduino (C++)",
-        "Mermaid"
-    ]
+import { titles } from "./projectPageContent"
+import { technologies1 } from "./projectPageContent"
+import { technologies2 } from "./projectPageContent"
 
-    const technologies2 = [
-        "SQL (PostGreSQL)",
-        "Database",
-        "Node.js",
-        "Docker",
-        "Git",
-        "GitHub",
-        "Jira",
-        "Google Cloud Platform",
-        "REST API",
-        "Bruno",
-        "Postman",
-        "Scrum",
-        "Kanban"
-    ]
+function Technologies() {
 
     return (
         <>
         <h1 className="technology-title">
-            Teknologier jeg har erfaring med
+            {titles.technology}
         </h1>
 
         <div className="technology-section">

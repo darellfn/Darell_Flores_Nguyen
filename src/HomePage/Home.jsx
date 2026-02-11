@@ -7,7 +7,6 @@ function Home() {
     return (
         <Webpage>
             <Card/>
-
             <LastestProjects></LastestProjects>
         </Webpage>
     )
