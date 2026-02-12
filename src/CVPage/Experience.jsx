@@ -15,7 +15,7 @@ function Experience() {
                 <div key={index}>
                     <div className="divider"></div>
 
-                    <h2 className="">
+                    <h2 className="undertitles">
                         {work.position}
                     </h2>
 

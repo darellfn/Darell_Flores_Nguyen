@@ -1,36 +1,41 @@
 .project-title {
   color: white;
   margin-bottom: 8%;
-  font-size: 278%;
+  font-size: clamp(1.2rem, 3vw, 5rem);
   font-weight: bold;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .project-page {
-  width: 100vw;
+  width: 100%;
   height: 100%;
   background-color: rgb(26 26 26);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 10px;
 }
 
 .project-section_and_video {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .project-section {
   display: flex;
+  width: 90%;
   flex-direction: row;
   height: auto;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 5%;
   gap: 6%;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 @media (max-width: 1000px) {
@@ -39,26 +44,12 @@
     flex-direction: column;
     height: auto;
     width: 100%;
-    align-items: stretch;
-    margin-bottom: 5%;
-    gap: 6%;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
-/* @media (max-height: 800px) {
-  .project-section {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    gap: 8%;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     margin-bottom: 5%;
+    gap: 6%;
   }
-} */
+}
 
 .project-card {
   background-color: rgb(26 26 26);
@@ -72,26 +63,38 @@
   flex-direction: column;
 }
 
+.project-card h1 {
+  font-size: clamp(1rem, 2.2vw, 2.5rem);
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
 .project-text {
   margin-top: 0;
   text-align: start;
-  margin-left: 3%;
-  margin-right: 3%;
   word-spacing: 0.2em;
   line-height: 1.7;
+  font-size: clamp(1rem, 1vw, 1.8rem);
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .more-info {
   color:rgb(148 243 228);
   margin-top: 0;
   text-align: start;
-  margin-left: 3%;
   font-weight: bold;
+  overflow-wrap: anywhere;
+  font-size: clamp(1rem, 1vw, 1.8rem);
+  white-space: normal;
 }
 
 .more-info a {
   color: white;
   font-weight: normal;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  font-size: clamp(0.8rem, 1vw, 1.8rem);
 }
 
 .more-info a:hover {
@@ -102,10 +105,9 @@
   color:white;
   margin-top: 0;
   text-align: start;
-  margin-left: 3%;
-  margin-right: 3%;
   word-spacing: 0.2em;
   line-height: 1.7; 
+  font-size: clamp(1rem, 1vw, 1.8rem);
 }
 
 .project-card h1 {
@@ -114,14 +116,14 @@
 
 .tech {
   color: rgb(148 243 228);
+  font-size: clamp(1rem, 1vw, 1.8rem);
+  overflow-wrap: anywhere
 }
 
 .tech-text {
   color: white;
   margin-top: 0;
   text-align: start;
-  margin-left: 3%;
-  margin-right: 3%;
   word-spacing: 0.2em;
   line-height: 1.7;
 }
@@ -136,32 +138,14 @@
   color: white;
   margin-bottom: 10%;
   margin-top: 10%;
-  font-size: 278%;
+  font-size: clamp(1.2rem, 3vw, 5rem);  
   font-weight: bold;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .highlight {
   color: rgb(148 243 228);
-}
-
-.sunshine-div {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  padding-right: 0;
-}
-
-.sunshine-card {
-  background-color: rgb(26 26 26);
-  color: white;
-  width: 80vh;
-  height: auto;
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  margin-bottom: 20%;
 }
 
 .video-box {
@@ -179,18 +163,24 @@ iframe {
 .technology1 {
   color: white;
   margin-bottom: 10%;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .technology2 {
   color: white;
   margin-bottom: 20%;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .technology-title {
   color: white;
   margin-bottom: 5%;
-  font-size: 278%;
+  font-size: clamp(1.2rem, 3vw, 5rem);  
   font-weight: bold;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 .technology-section {
@@ -198,6 +188,20 @@ iframe {
   flex-direction: row;
   height: auto;
   gap: 10%;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 10%;
+  width: 100%;
+}
+
+@media (max-width: 550px) {
+  .technology-section {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
 }

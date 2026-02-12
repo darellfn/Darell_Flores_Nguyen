@@ -9,6 +9,7 @@ rgb(55 170 156) button */
   display: flex;
   justify-content: center;
   flex-direction: row;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -18,6 +19,7 @@ rgb(55 170 156) button */
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
   }
 }
 
@@ -28,6 +30,15 @@ rgb(55 170 156) button */
   text-align: center;
   width: 100%;
   color: white;
+  font-size: clamp(1.3rem, 3vw, 2.2rem)
+}
+
+.undertitles {
+  font-size: clamp(1rem, 1.6vw, 2rem);
+}
+
+.CV-titles {
+  font-size: clamp(1.3rem, 3vw, 2.2rem)
 }
 
 .section {
@@ -37,16 +48,18 @@ rgb(55 170 156) button */
   padding: 40px;
   border-radius: 12px;
   border:2px solid rgb(148 243 228);
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 @media (max-height: 1000px) {
   .section {
     background-color: rgb(26 26 26);
     width: 100%;
-    margin: 40px auto; 
-    padding: 40px;
     border-radius: 12px;
     border:2px solid rgb(148 243 228);
+    overflow-wrap: anywhere;
+    white-space: normal;
   }
 }
 
@@ -70,10 +83,6 @@ rgb(55 170 156) button */
 }
 }
 
-.utdanning {
-  font-size: 4.5vh;
-}
-
 .divider {
   width: 100%;
   border: 0;
@@ -91,9 +100,6 @@ rgb(55 170 156) button */
   margin: 10px auto;
 }
 
-.alma-mater {
-  font-size: 2vh;
-}
 
 .education-list {
   display: flex;
@@ -101,14 +107,41 @@ rgb(55 170 156) button */
   flex-direction: column;
 }
 
+.place {
+  font-size: clamp(1rem, 1.2vw, 1.8rem)
+}
+
 .dates {
   color: rgb(148 243 228);
 }
 
-.experience-div {
-  background-color: gray;
-  width: 10vh;
-  height: 10vh;
+@media (max-width: 600px) {
+  .courses {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .courses li {
+    margin-bottom: 2rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .experience-list {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: start;
+  }
+}
+
+@media (max-width: 600px) {
+  .experience-list li {
+    margin-bottom: 2rem;
+  }
 }
 
 .tasks {
