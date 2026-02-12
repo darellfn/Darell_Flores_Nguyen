@@ -4,7 +4,7 @@ import AboutMe from "./AboutMePage/AboutMe.jsx"
 import Cv from "./CVPage/CV.jsx"
 import ContactPage from "./ContactPage/ContactPage.jsx"
 import Project from "./ProjectPage/Project.jsx"
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 function App() {
   return(

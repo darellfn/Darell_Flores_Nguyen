@@ -104,6 +104,17 @@ rgb(55 170 156) button */
   width: 135px;
 }
 
+@media (max-width: 150px) {
+  .link-div {
+    margin-top: 2.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+  }
+}
+
 .link {
   height: 35px;
   width: 35px;
@@ -133,14 +144,14 @@ rgb(55 170 156) button */
 
 .hello {
   color: rgb(148 243 228);
-  font-size: 20px;
+  font-size: clamp(1rem, 1.4vw, 1.8rem);
   font-weight: bold;
 
 }
 
 .role {
   color: white;
-  font-size: 48px;
+  font-size: clamp(1rem, 4vw, 3rem);
   margin-top: 0%;
   margin-bottom: 0%;
   font-weight: bold;
@@ -154,6 +165,7 @@ rgb(55 170 156) button */
   margin-bottom: 3%;
   word-spacing: 0.2em;
   line-height: 1.7;
+  font-size: clamp(0.8rem, 1.1vw, 1.6rem);
 }
 
 @media (max-width: 800px) {
@@ -161,9 +173,10 @@ rgb(55 170 156) button */
     text-align: center;
     margin-top: 3%;
     margin-bottom: 3%;
-    word-spacing: 0.2em;
+    word-spacing: 0em;
     line-height: 1.7;
-}
+    overflow-wrap: anywhere;
+  }
 }
 
 .button-div {
@@ -211,6 +224,9 @@ rgb(55 170 156) button */
   background-color: rgb(51 63 68);
 }
 
+
+/* ----- Latest Project ----- */
+
 .latest-projects-section {
   display: flex;
   align-items: start;
@@ -246,25 +262,47 @@ rgb(55 170 156) button */
   align-items: center;
 }
 
+@media (max-width: 1100px) {
+.latest-projects-text-and-button {
+  width: 100%;
+  gap: 62.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+}
+
 .latest-text {
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  gap: 0%;
-  margin-left: 2.5;
+}
+
+@media (max-width: 1000px) {
+  .latest-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .latest-text h1 {
   color: white;
   margin-bottom: 2.5%;
   font-weight: bold;
-  font-size: 36px;
+  font-size: clamp(1rem, 2.6vw, 3rem);
+  white-space: normal;
+  overflow-wrap: anywhere;
 }
 
 .latest-text h3 {
   color: white;
   margin-top: 2.5%;
+  font-size: clamp(1rem, 1.3vw, 2rem)
 }
 
 .see-all-button {
@@ -275,7 +313,7 @@ rgb(55 170 156) button */
   width: 135px;
   height: 50px;
   cursor: pointer;
-  font-size: 110%;
+  font-size: clamp(1rem, 1.2vw, 1.8rem);
   color: white;
   background-color: rgb(55 170 156);
   border: transparent;
@@ -291,21 +329,9 @@ rgb(55 170 156) button */
   width: 100%;
   display: flex;
   flex-direction: row; 
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  gap: 5%;
-}
-
-@media (max-width: 1100px) {
-.latest-projects-text-and-button {
-  width: 100%;
-  gap: 62.5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 }
 
 @media (max-width: 1000px) {
@@ -321,25 +347,27 @@ rgb(55 170 156) button */
 }
 }
 
+.card-and-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 @media (max-width: 1000px) {
 .card-and-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   margin-bottom: 5%;
 }
 }
 
-.card-and-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .latest-projects-card {
-  width: 460px;
+  width: 80%;
   height: 60%;
   display: flex;
   justify-content: center;
@@ -356,21 +384,35 @@ rgb(55 170 156) button */
   width: 100%;
   display: flex;
   justify-content: start;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
   margin-top: 0%;
 }
+
+@media (max-width: 550px) {
+  .card-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0%;
+  }  
+}
+
 
 .card-text h2 {
   color: white;
   margin-top: 2%;
   margin-bottom: 0%;
+  font-size: clamp(1rem, 1.8vw, 3rem);
 }
 
 .more {
   color: rgb(148 243 228);
   margin-top: 2%;
   text-decoration: none;
+  font-size: clamp(1rem, 1.2vw, 1.8rem);
 }
 
 .more:hover {

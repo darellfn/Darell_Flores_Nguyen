@@ -33,7 +33,7 @@ export const projects = [
         alt: "The Milk Carton",
         usedTechs: "Arduino (C++)",
         moreInfo: true,
-        infoTitle: "Mer info:",
+        infoTitle: "Info:",
         link: "https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/innotink/",
         pictureOnLeft: false
     },
@@ -158,7 +158,6 @@ export const technologies1 = [
 
 export const technologies2 = [
         "SQL (PostGreSQL)",
-        "Database",
         "Node.js",
         "Docker",
         "Git",

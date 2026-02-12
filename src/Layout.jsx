@@ -6,7 +6,7 @@ function Layout() {
         <>
             <WebHeader/>
             <main>
-                <Outlet /> {}
+                <Outlet />
             </main>
         </>
     )

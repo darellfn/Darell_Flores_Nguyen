@@ -9,6 +9,7 @@
 .contact-page h1 {
     color: white;
     margin-top: 3%;
+    font-size: clamp(1.5rem, 2.5vw, 2.6rem);
 }
 
 .contact-card {
@@ -23,6 +24,8 @@
     background-color: rgb(26 26 26);
     border: 2px solid rgb(148 243 228);
     font-size: 20px;
+    font-size: clamp(1rem, 1.4vw, 2rem);
+    white-space: normal;
 }
 
 .contact-card p {
@@ -41,4 +44,10 @@
 
 .contact-card p a:hover {
     color: rgb(68 69 75);
+}
+
+@media(max-width: 300px) {
+    .contact-card {
+        overflow-wrap: anywhere;
+    }
 }

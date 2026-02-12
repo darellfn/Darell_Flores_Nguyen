@@ -8,8 +8,8 @@ function Cv() {
     <>
         <Contact/>
         <div className="CV-page">
-            {Education()}
-            {Experience()}
+            <Education/>
+            <Experience/>
         </div>
     </>
 

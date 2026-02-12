@@ -4,11 +4,11 @@ import { education } from './cvPageContent.js'
 function Education() {
   return (
       <section className="section">
-         <div className="titles">
-            <h1 className="titles">
-              {titles.education}
-            </h1>
-          </div>
+        <div className="titles">
+          <h1 className="titles">
+            {titles.education}
+          </h1>
+        </div>
 
         {education.map((alma, index) => {
           return (
@@ -21,7 +21,7 @@ function Education() {
               {alma.grade}
             </h2>
 
-            <h4 className="">
+            <h4 className="place">
               {alma.place}
             </h4>
 
@@ -34,9 +34,9 @@ function Education() {
             {alma.hasCourses && alma.courses && (
               <div>
                 {Object.entries(alma.courses).map(([semesterName, courses]) => (
-                <div key={semesterName} className="">
+                <div key={semesterName}>
                   <h3>{semesterName}</h3>
-                  <ul className="">
+                  <ul className="courses">
                     {courses.map((course, index) => (
                       <li key={index}>{course}</li>
                     ))}
