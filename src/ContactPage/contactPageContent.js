@@ -1,5 +1,6 @@
 export const contact = {
-    title: "Ta kontakt",
+    title1: "Ta ", 
+    title2: "kontakt",
     socials: [
         {social: "Telefon: ", value: "+47 941 91 948", hasLink: false},
         {social: "Email: ", value: "darellfn03@gmail.com ", hasLink: false},

@@ -22,7 +22,10 @@ export const projects = [
         moreInfo: false,
         infoTitle: null,
         link: null,
-        pictureOnLeft: true
+        pictureOnLeft: true,
+        buttonPath: "/project",
+        buttonContent: "Mer info →",
+        scrollPath: "Ell" 
     },
     {
         name: "The Milk Carton",
@@ -35,7 +38,10 @@ export const projects = [
         moreInfo: true,
         infoTitle: "Info:",
         link: "https://www.uio.no/studier/emner/matnat/ifi/IN1060/v24/prosjektgrupper/innotink/",
-        pictureOnLeft: false
+        pictureOnLeft: false,
+        buttonPath: "/project",
+        buttonContent: "Mer info →",
+        scrollPath: "The Milk Carton" 
     },
     {
         name: "Algoritmer",
@@ -52,7 +58,10 @@ export const projects = [
         moreInfo: true,
         infoTitle: "GitHub:",
         link: "https://github.com/darellfn/Sorting_Algorithms.git",
-        pictureOnLeft: true
+        pictureOnLeft: true,
+        buttonPath: "/project",
+        buttonContent: "Mer info →",
+        scrollPath: "algorithm" 
     },
     {
         name: "Denne nettsiden",
@@ -66,7 +75,26 @@ export const projects = [
         moreInfo: true,
         infoTitle: "GitHub:",
         link: "https://github.com/darellfn/Darell_Flores_Nguyen.git",
-        pictureOnLeft: false
+        pictureOnLeft: false,
+        buttonPath: "/project",
+        buttonContent: "Mer info →",
+        scrollPath: "dfn-bro" 
+    },
+    {
+        name: "The Hidden Sky",
+        text: `Jeg utviklet et spill i samarbeid med en designer, hvor jeg hadde hovedansvaret for den tekniske delen av prosjektet. Som utvikler jobbet jeg med å implementere spillmekanikker, 
+        logikk og struktur ved hjelp av Python og Pygame, mens designeren fokuserte på visuelt uttrykk, brukeropplevelse og spillfølelse. Prosjektet ga verdifull erfaring i tverrfaglig samarbeid, 
+        problemløsning og praktisk bruk av programmering i et kreativt produkt. Spillet er fremdeles under arbeid.`,
+        img: "images/theHiddenSky.png",
+        alt: "The Hidden Sky",
+        usedTechs: "Visual Studio Code, Python, Pygame",
+        moreInfo: true,
+        infoTitle: "GitHub:",
+        link: "https://github.com/darellfn/The-Hidden-Sky.git",
+        pictureOnLeft: true,
+        buttonPath: "/project",
+        buttonContent: "Mer info →",
+        scrollPath: "The Hidden Sky" 
     }
 ]
 

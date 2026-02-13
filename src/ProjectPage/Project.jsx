@@ -32,7 +32,7 @@ function Project() {
             {projects.map((project, index) => {
                 if (project.pictureOnLeft) {
                     return (
-                        <div className="project-section" key={index}>
+                        <div className="project-section" key={index} id={project.scrollPath}>
 
                             <div className="project-card">
                                 <img src={project.img} alt={project.alt} className="imga"></img>
@@ -61,7 +61,7 @@ function Project() {
                     )
                 } else {
                     return (
-                        <div className="project-section" key={index}>
+                        <div className="project-section" key={index} id={project.scrollPath}>
                             <div className="project-card">
                                 <h1>
                                     {project.name}

@@ -34,7 +34,7 @@ rgb(55 170 156) button */
 }
 
 .undertitles {
-  font-size: clamp(1rem, 1.6vw, 2rem);
+  font-size: clamp(1.1rem, 1.6vw, 2rem);
 }
 
 .CV-titles {
@@ -113,6 +113,14 @@ rgb(55 170 156) button */
 
 .dates {
   color: rgb(148 243 228);
+  font-size: clamp(1rem, 1vw, 1.8rem);
+}
+.semester {
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
+
+.courses li {
+  font-size: clamp(1rem, 1vw, 1.8rem);
 }
 
 @media (max-width: 600px) {
@@ -127,7 +135,10 @@ rgb(55 170 156) button */
   .courses li {
     margin-bottom: 2rem;
   }
+}
 
+.experience-list {
+  font-size: clamp(1rem, 1vw, 1.8rem);
 }
 
 @media (max-width: 600px) {

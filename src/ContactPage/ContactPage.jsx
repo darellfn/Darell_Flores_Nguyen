@@ -6,7 +6,7 @@ function ContactPage() {
     return (
         <div className='contact-page'>
             <h1>
-                {contact.title}
+                {contact.title1} <span className='highlight'>{contact.title2}</span>
             </h1>
             <div className='contact-card'>
                 {contact.socials.map((cont, index) => {

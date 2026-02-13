@@ -34,22 +34,3 @@ export const latest = {
     buttonPath: "/project",
     buttonContent: "SE ALLE"
 }
-
-export const latestProjects = [
-    {
-        name: "Denne nettsiden", 
-        img: "/images/dfn.png",
-        alt: "dfn", 
-        buttonPath: "/project",
-        buttonContent: "Mer info →",
-        scrollPath: "dfn-bro"
-    },
-    {
-        name: "Algoritmer", 
-        img: "/images/algorithm.png",
-        alt: "algorithm", 
-        buttonPath: "/project",
-        buttonContent: "Mer info →",
-        scrollPath: "algorithm" 
-    }
-]

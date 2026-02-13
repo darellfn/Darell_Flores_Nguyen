@@ -35,7 +35,7 @@ function Education() {
               <div>
                 {Object.entries(alma.courses).map(([semesterName, courses]) => (
                 <div key={semesterName}>
-                  <h3>{semesterName}</h3>
+                  <h3 className='semester'>{semesterName}</h3>
                   <ul className="courses">
                     {courses.map((course, index) => (
                       <li key={index}>{course}</li>

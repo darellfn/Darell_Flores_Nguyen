@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom'
 import { latest } from './homePageContent'
-import { latestProjects } from './homePageContent'
+import { projects } from '../ProjectPage/projectPageContent.js'
 
 function LastestProjects() {
+    const len = projects.length
+    const latestProjects = [projects[len - 1], projects[len - 2]]
     return (
         <div className="latest-projects-section">
             <div className="latest-projects-text-and-button">

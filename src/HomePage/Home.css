@@ -96,52 +96,6 @@ rgb(55 170 156) button */
   }
 }
 
-.link-div {
-  margin-top: 2.7%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 135px;
-}
-
-@media (max-width: 150px) {
-  .link-div {
-    margin-top: 2.7%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 135px;
-  }
-}
-
-.link {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  background-color: rgb(55 170 156);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.link:hover {
-  background-color: rgb(68 69 75);
-  cursor: pointer
-}
-
-.link img {
-  object-fit: contain;
-  height: 60%;
-  width: 60%;
-}
-
-.mail {
-  object-fit: contain;
-  height: 100%;
-  width: 100%;
-}
-
 .hello {
   color: rgb(148 243 228);
   font-size: clamp(1rem, 1.4vw, 1.8rem);
@@ -190,31 +144,28 @@ rgb(55 170 156) button */
 @media (max-width: 900px) {
   .button-div {
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: stretch;
     width: 100%;
     height: 90%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-top: 5%;
   }
-
-  .card-button {
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  font-size: 110%;
-  color: white;
-  background-color: rgb(55 170 156);
-  border: transparent;
 }
 
+@media (max-width: 800px) {
+  .button-div {
+    justify-content: center;
+    align-items: center;
+  }
 }
+
 
 .card-button {
-  width: 135px;
-  height: 50px;
+  font-size: clamp(1rem, 1.2vw, 1.8rem);
+  width: clamp(7rem, 10vw, 14rem);
+  height: clamp(2.8rem, 6vh, 4rem);
   cursor: pointer;
-  font-size: 110%;
   color: white;
   background-color: rgb(55 170 156);
   border: transparent;
@@ -224,6 +175,69 @@ rgb(55 170 156) button */
   background-color: rgb(51 63 68);
 }
 
+.link-div {
+  margin-top: 2.7%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 100%;
+  gap: 1.5%;
+}
+
+@media (max-width: 800px) {
+  .link-div {
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 150px) {
+  .link-div {
+    margin-top: 2.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+  }
+}
+
+.link {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(55 170 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 1700px) {
+  .link {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.link:hover {
+  background-color: rgb(68 69 75);
+  cursor: pointer
+}
+
+.link img {
+  object-fit: contain;
+  height: 60%;
+  width: 60%;
+}
+
+.mail {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
 
 /* ----- Latest Project ----- */
 
@@ -294,7 +308,7 @@ rgb(55 170 156) button */
   color: white;
   margin-bottom: 2.5%;
   font-weight: bold;
-  font-size: clamp(1rem, 2.6vw, 3rem);
+  font-size: clamp(1rem, 2.4vw, 2.8rem);
   white-space: normal;
   overflow-wrap: anywhere;
 }
@@ -306,14 +320,14 @@ rgb(55 170 156) button */
 }
 
 .see-all-button {
+  font-size: clamp(1rem, 1.2vw, 1.8rem);
+  width: clamp(7rem, 10vw, 14rem);
+  height: clamp(2.8rem, 6vh, 4rem);
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 135px;
-  height: 50px;
   cursor: pointer;
-  font-size: clamp(1rem, 1.2vw, 1.8rem);
   color: white;
   background-color: rgb(55 170 156);
   border: transparent;
